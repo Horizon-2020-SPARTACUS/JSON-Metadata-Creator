@@ -1,6 +1,7 @@
 {
   "title": "Electrochemical cycling data",
   "type": "object",
+  "id": "cyclingdata",
   "required": [
     "file_type",
     "file_format"
@@ -313,7 +314,7 @@
       "title": "Reference tests",
       "type": "string",
       "watch": {
-        "vars": "procedure_building_blocks.custom_variables"
+        "vars": "cyclingdata.procedure_building_blocks.custom_variables"
       },
       "enumSource": [
         {
