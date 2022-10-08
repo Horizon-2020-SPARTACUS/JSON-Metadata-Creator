@@ -310,19 +310,6 @@
         }
       }
     },
-    "reference_tests": {
-      "title": "Reference tests",
-      "type": "string",
-      "watch": {
-        "vars": "cyclingdata.procedure_building_blocks.custom_variables"
-      },
-      "enumSource": [
-        {
-          "source": "vars",
-          "value": "{{item.name}}"
-        }
-      ]
-    },
     "procedure_recipe": {
       "title": "Procedure recipe",
       "type": "array",
@@ -337,7 +324,15 @@
           "referenced_variable": {
             "title": "Reference variable",
             "type": "string",
-            "enum": ["variable1", "variable2"]
+            "watch": {
+              "vars": "cyclingdata.procedure_building_blocks.custom_variables"
+            },
+            "enumSource": [
+              {
+                "source": "vars",
+                "value": "{{item.name}}"
+              }
+            ]
           }
         }
       }
