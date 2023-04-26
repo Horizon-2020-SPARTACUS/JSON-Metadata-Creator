@@ -47,6 +47,9 @@
       "items": {
         "title": "Item",
         "headerTemplate": "{{i}} - {{self.item_type.file_type}}",
+        "options": {
+            "keep_oneof_values": false
+        },
         "type": "object",
         "required": [
           "name_or_pattern",
