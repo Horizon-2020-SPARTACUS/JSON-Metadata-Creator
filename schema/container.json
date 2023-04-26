@@ -46,7 +46,7 @@
       "format": "tabs",
       "items": {
         "title": "Item",
-        "headerTemplate": "{{i}} - {{self.file_type}}",
+        "headerTemplate": "{{i}} - {{self.item_type.file_type}}",
         "type": "object",
         "required": [
           "name_or_pattern",
